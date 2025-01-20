@@ -17,6 +17,7 @@ var speed = 0.01;
 ctx.font = radius * 0.9 + 'px hershey';
 ctx.textAlign = 'center';
 ctx.textBaseline = 'middle';
+ctx.fillStyle = "white"; 
 let angleOffset = Math.PI / 2;
 
 function draw_text() {
