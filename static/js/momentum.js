@@ -14,7 +14,7 @@ const radius = 75;
 const centerX = canvas.width / 2;
 const centerY = canvas.height / 2;
 var speed = 0.01;
-// var speed = 1.01;    // accelerate
+// var speed = 1.01;            // accelerate
 ctx.font = radius * 0.9 + 'px hershey';
 ctx.textAlign = 'center';
 ctx.textBaseline = 'middle';
@@ -39,3 +39,14 @@ function draw_text() {
   requestAnimationFrame(draw_text);
 }
 draw_text();
+
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'ArrowLeft') 
+        speed -= 0.025;
+    if (event.key === 'ArrowRight')
+        speed += 0.025;
+});
+
+
+
+
